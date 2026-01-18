@@ -1,0 +1,309 @@
+h1,h2,h3,h4,h5 {
+        color: #262525;
+}
+.no-wrap {
+    white-space: nowrap;
+}
+.break {
+    display: block;
+}
+.welcome {
+        background: url("/web/20250309000824im_/http://domwradosci.waw.pl/assets/img/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    display:flex;justify-content:center;align-items:center;
+}
+.welcome h1 {
+    margin: 10vh 0vw;
+}
+h1 {
+    font-size: 3.5em;
+    color: white;
+    background: rgba(204, 204, 204, 0.5);
+    padding: 5vh;
+    border-radius: 2vw;
+}
+/* Menu */
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: Onassis - Free Bootstrap 3 Theme
+ * Version: 1.0
+ * URL: http://blacktie.co
+ */
+
+body {
+  background-color: #f2f2f2;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato";
+    font-weight: 300;
+    color: #333;
+}
+
+/* Links */
+a {
+    color: #f85c37;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+
+/* MENU CONF*/
+
+.menu {
+	position: fixed;
+	right: -200px;
+	width: 260px;
+	height: 100%;
+	top: 0;
+	z-index: 10;
+	text-align: left;
+}
+
+.menu.menu-open {
+	right: 0px;
+}
+
+.menu-wrap {
+	position: absolute;
+	top: 0;
+	left: 60px;
+	background: rgba(143,141,141, 0.8);
+	width: 200px;
+	height: 100%;
+}
+
+.menu h1.logo a {
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 800;
+	letter-spacing: 0.15em;
+	line-height: 40px;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-top: 20px;
+}
+
+.menu h1.logo a:hover {
+	color: #f85c37;
+}
+
+.menu img.logo {
+	margin: 20px 0;
+	max-width: 160px;
+}
+.menu img {
+    margin-bottom: 2vh;
+}
+.menu a {
+	margin-left: 20px;
+	color: #333333;
+	display: block;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 40px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.menu a:hover {
+	color: #ffffff;
+}
+
+.menu a:active {
+	color: #ffffff;
+}
+
+.menu a > i {
+	float: left;
+	display: inline-block;
+	vertical-align: middle; 
+	text-align: left;
+	width: 25px;
+	font-size: 14px;
+	line-height: 40px;
+	margin: 25px 2px;
+}
+
+.menu-close {
+cursor: pointer;
+display: block;
+position: absolute;
+font-size: 14px;
+color: #333333;
+width: 40px;
+height: 40px;
+line-height: 40px;
+top: -1vh;
+right: -1vw;
+	-webkit-transition: all .1s ease-in-out;
+	   -moz-transition: all .1s ease-in-out;
+		-ms-transition: all .1s ease-in-out;
+		 -o-transition: all .1s ease-in-out;
+			transition: all .1s ease-in-out;
+}
+
+.menu-close:hover {
+	color: #ffffff;
+	-webkit-transition: all .1s ease-in-out;
+	   -moz-transition: all .1s ease-in-out;
+		-ms-transition: all .1s ease-in-out;
+		 -o-transition: all .1s ease-in-out;
+			transition: all .1s ease-in-out;
+}
+
+/* Push the body after clicking the menu button */
+.body-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.body-push-toright {
+	left: 200px;
+}
+
+.body-push-toleft {
+	left: -200px;
+}
+
+.menu,
+.body-push {
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+		-ms-transition: all .3s ease;
+		 -o-transition: all .3s ease;
+			transition: all .3s ease;
+}
+
+#menuToggle {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	z-index: 11;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	color: #ffffff;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+	background: rgba(0,0,0,0.25);
+	-webkit-transition: all .1s ease-in-out;
+	   -moz-transition: all .1s ease-in-out;
+		-ms-transition: all .1s ease-in-out;
+		 -o-transition: all .1s ease-in-out;
+			transition: all .1s ease-in-out;
+}
+
+
+
+/* Inter */
+.inter {
+    background: white;
+    
+}
+/* Gallery */
+.gallery
+{
+    display: inline-block;
+    margin-top: 20px;
+}
+.gallery ul {
+    text-align: center;
+}
+.list-line span {
+    display: block;
+}
+/* About */
+.about {
+background-color: #F2F2F2;
+}
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+}
+footer span {
+    margin-right: 5%;
+}
+footer h2 {
+    color: white;
+    font-weight: 600;
+}
+footer h3 {
+        color: white;
+    font-weight: 600;
+}
+footer h4 {
+    color: white;
+}
+    .copy {
+ margin-top: 5vh;   
+}
+@media screen and (max-width: 56.25em) {
+    .list-inline {
+        text-align: center;
+    }
+    footer {
+        text-align: center;
+    }
+
+}
+
+/*
+     FILE ARCHIVED ON 00:08:24 Mar 09, 2025 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:54:25 Jan 18, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.671
+  exclusion.robots: 0.027
+  exclusion.robots.policy: 0.011
+  esindex: 0.013
+  cdx.remote: 19.936
+  LoadShardBlock: 109.594 (3)
+  PetaboxLoader3.datanode: 171.003 (5)
+  PetaboxLoader3.resolve: 65.61 (2)
+  load_resource: 158.737 (2)
+*/
